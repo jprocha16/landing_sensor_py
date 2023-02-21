@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="image_publish" pkg="landing_sensor_py" type="image_publish.py" />
+  <node name="aruco_detector" pkg="landing_sensor_py" type="aruco_detector.py" />
+  <node name="pose_estimation" pkg="landing_sensor_py" type="pose_estimation.py" />
+</launch>

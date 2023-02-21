@@ -1,0 +1,13 @@
+Header header
+  uint32 seq
+  time stamp
+  string frame_id
+uint16 id
+uint16 c1_x
+uint16 c1_y
+uint16 c2_x
+uint16 c2_y
+uint16 c3_x
+uint16 c3_y
+uint16 c4_x
+uint16 c4_y
