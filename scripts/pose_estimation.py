@@ -40,8 +40,8 @@ class ArucoPoseEstimation:
 
         self.arucoid_1 = 129
         self.arucoid_2 = 280
-        self.arucoid_1_size = 0.50   # 0.45
-        self.arucoid_2_size = 0.0555   # 0.05
+        self.arucoid_1_size = 0.45     # 0.50
+        self.arucoid_2_size = 0.05   # 0.0555
         self.k = k
         self.d = d
 

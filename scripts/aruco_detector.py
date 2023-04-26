@@ -106,7 +106,7 @@ class ArucoDetector:
         corners_lst, ids, rejected_img_points = cv2.aruco.detectMarkers(im, cv2.aruco_dict, parameters=self.parameters)
         # corners is tuple
         # ids is numpy array
-        print(corners_lst)
+        # print(corners_lst)
 
         seq = 0
         # publish corners and id

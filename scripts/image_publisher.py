@@ -10,7 +10,7 @@ class VideoPublisher:
     def __init__(self, video_file):
         self.bridge = CvBridge()
         self.cap = cv2.VideoCapture(video_file)
-        self.pub = rospy.Publisher('sensor_images', Image, queue_size=10)
+        self.pub = rospy.Publisher('/sensor_images', Image, queue_size=10)
 
     def start(self):
         rate = rospy.Rate(30)  # 30 fps
@@ -26,7 +26,7 @@ class VideoPublisher:
 
 if __name__ == '__main__':
     rospy.init_node('image_publisher')
-    vp = VideoPublisher("/home/ciafa/ArUCo-Markers-Pose-Estimation-Generation-Python/Images/e_aruco_test_video.mp4")
+    vp = VideoPublisher("/home/ciafa/2023_02_22__12_13_38_sensor_images.mp4")
     vp.start()
     rospy.spin()
 
